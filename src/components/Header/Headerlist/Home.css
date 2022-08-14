@@ -1,0 +1,94 @@
+input{
+    display: flex;
+    width: 500px;
+    border: 3px solid  #1b2430;
+    border-radius: 5px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+::placeholder{
+    font-size: large;
+}
+.table-container a:hover {
+    background-color: #ddd;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  }
+  
+  .table-container a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .table-container input[type=text] {
+    padding: 6px;
+    margin: 12px 0px;
+    border: none;
+    font-size: 17px;
+  }
+
+.table-container {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4a525c;
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; */
+
+  }
+    
+  table {
+    border: 2px solid rgb(29, 61, 29);
+    width: 500px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+
+  }
+    
+  th {
+    border: 2px solid black;
+  }
+    
+  td {
+    text-align: center;
+  }
+  .table-container td,.table-container th {
+    border: 1px solid #ddd;
+    padding: 4px;
+  }
+  .table-container tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .table-container tr:hover {background-color: #ddd;}
+  .table-container th {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: left;
+    background-color:#1b2430;
+    color: white;
+  } 
+h1{
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f2f2f2;
+}
+.button1{
+  font-size:20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);  
+  cursor: pointer;
+   margin:17px;
+  background-color: rgb(245, 245, 245);
+  padding: 14px;
+  border-radius: 5px;
+  width: 27%;
+  font-size: 20px;
+}
+  
+
+  
+
+  
+ 

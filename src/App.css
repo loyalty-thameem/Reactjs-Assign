@@ -1,7 +1,15 @@
 .App {
-  text-align: center;
+  font-family: sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #4a525c;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
