@@ -42,7 +42,7 @@ function Home() {
               setSearch(event.target.value.trim())
             }}
           />
-          <button onClick={() => {
+          {/* <button onClick={() => {
             setSortField(!sortField)
           }}>Toggle</button>
           {sortField ?
@@ -65,7 +65,7 @@ function Home() {
                   </tbody>
                 </table>
               )
-            }):<h1>HHHHH</h1>}
+            }):<h1>HHHHH</h1>} */}
           {isLoading ? <LoadingSpinner /> :
 
             users
