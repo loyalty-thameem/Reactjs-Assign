@@ -68,7 +68,7 @@ function Login() {
         const staticUsername = 'vijayy'
         const staticPassword = 'Vij@12'
         if (staticUsername === username && staticPassword === password) {  
-            alert('Your are king')
+            alert('Login successfully')
             navigate("/");
             setUname(staticUsername)
         }

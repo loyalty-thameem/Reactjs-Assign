@@ -9,12 +9,11 @@ function Home() {
   const [users, setUsers] = React.useState([]);
   const [search, setSearch] = React.useState('');
   const [isLoading, setIsLoading] = React.useState(false);
-  const [sortField, setSortField] = React.useState(false);
   const baseUrl = 'https://jsonplaceholder.typicode.com/users';
   const [uname, setUname] = useThemeConsumer();
   const navigate = useNavigate();
-  // console.log('uname response ====>', uname)
-  // console.log('setUname response ====>', setUname)
+  console.log('uname response ====>', uname)
+  console.log('setUname response ====>', setUname)
   React.useEffect(() => {
     setIsLoading(true);
     axios.get(`${baseUrl}`)
@@ -42,30 +41,7 @@ function Home() {
               setSearch(event.target.value.trim())
             }}
           />
-          {/* <button onClick={() => {
-            setSortField(!sortField)
-          }}>Toggle</button>
-          {sortField ?
-            users.sort((a, b) => (a.id < b.id ? -1 : 1)).map((user, key) => {
-              return (
-                <table key={user.id}>
-                  <tbody>
-                    <tr>
-                      <th>Id</th>
-                      <th>Name</th>
-                      <th>Username</th>
-                      <th>Email</th>
-                    </tr>
-                    <tr >
-                      <td>{user.id}</td>
-                      <td>{user.name}</td>
-                      <td>{user.username}</td>
-                      <td>{user.email}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              )
-            }):<h1>HHHHH</h1>} */}
+         
           {isLoading ? <LoadingSpinner /> :
 
             users
